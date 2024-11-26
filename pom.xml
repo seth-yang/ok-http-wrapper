@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>ok-http-wrapper</artifactId>
+    <version>1.0.2</version>
+    <packaging>jar</packaging>
+
+    <parent>
+        <groupId>io.github.seth-yang</groupId>
+        <artifactId>dreamwork-parent</artifactId>
+        <version>1.0.0</version>
+        <relativePath />
+    </parent>
+
+    <scm>
+        <connection>scm:git:git://github.com/seth-yang/ok-http-wrapper</connection>
+        <developerConnection>scm:git:git@hithub.com:seth-yang/ok-http-wrapper</developerConnection>
+        <url>https://github.com/seth-yang/ok-http-wrapper</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.github.seth-yang</groupId>
+            <artifactId>dreamwork-base</artifactId>
+            <version>3.1.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.11.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>4.12.0</version>
+        </dependency>
+    </dependencies>
+</project>
