@@ -419,7 +419,7 @@ public class HttpClient {
         if ("https".equalsIgnoreCase (u.getProtocol ())) {
             builder.sslSocketFactory (factory, manager)
                     .hostnameVerifier ((s, session) -> true);
-        } else {
+        } else if (logger.isTraceEnabled ()) {
             logger.warn ("url: {} does not need ssl socket factory!", url);
         }
         return builder;
